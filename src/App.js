@@ -4,7 +4,8 @@ import MovieCard from './movieCard';
 
 import searchSVG from './search.svg';
 
-const API_URL = 'http://www.omdbapi.com/?apikey=[yourAPI_KEY]&';
+const APIKEY = process.env.REACT_APP_APIKEY;
+const API_URL = `http://www.omdbapi.com/?apikey=${APIKEY}&`;
 
 const App = () => {
 
